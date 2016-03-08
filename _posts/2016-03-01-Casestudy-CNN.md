@@ -5,6 +5,14 @@ excerpt: "AlexNet, VGGNet, NIN, GoogLeNet, ResNet..."
 date: "2016-02-09 16:00:00"
 ---
 
+### Contents
+- AlexNet
+- VGGNet
+- Network In Network
+- GoogLeNet
+- PReLU-net
+- ResNet
+
 ## AlexNet (2012)
 Alex Krizhevsky의 이름을 따서 작명된 AlexNet은 2012년 ILSVRC에서 압도적인 winner가 된 네트워크이다. 이 네트워크 이후 ZFNet, NIN, VGGNet, GoogLeNet, ResNet등 다양한 뉴럴넷 기반의 모델들이 ILSVRC 혹은 다른 데이터셋에서 outperform한 결과를 보이게 되는데, AlexNet은 이 돌풍을 열게 한 선두주자라 말할 수 있을 것이다.  이번 포스트에서는 AlexNet이 소개된 논문을 정리하여, AlexNet에서 어떠한 방법론을 사용하여 LeNet을 발전시켰는지 살펴 볼 예정이다.
 
