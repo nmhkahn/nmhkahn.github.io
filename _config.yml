@@ -1,0 +1,12 @@
+# Site settings
+title: NamHyuk Ahn blog
+email: 
+description:
+baseurl: ""
+url: "http://nmhkahn.github.io"
+twitter_username: 
+github_username:  nmhkahn
+
+# Build settings
+markdown: redcarpet
+permalink: /:title
