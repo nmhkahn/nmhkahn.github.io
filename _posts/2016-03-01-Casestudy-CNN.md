@@ -144,7 +144,7 @@ VGGNet도 AlexNet이 시행한 두가지 augmentation 방법을 기본적으로 
 
 **Single-scale learning**은 $S$값을 고정된 크기로 정하는 것이다. 본 논문에서는 $S=256, 384$ 두가지 값으로 설정하였다. 네트워크를 훈련 시킬 때 먼저 $S=256$ 크기의 이미지를 통해 일차적으로 훈련하고 $S=384$ 크기의 네트워크를 학습시킬 때는 학습 속도를 올리기 위해 $S=256$인 네트워크의 초기값을 이용하고 이 때 더 작은 learning rate($10^{-3}$)을 사용하여 학습을 진행한다.
 
-**Multi-scale learning**은 $S$ 값을 $[S_{min}, S_{max}]$ 사이에서 랜덤하게 선택하고 이 값을 통해 이미지를 scale한다. VGGNet은 $S_{min} = 256, S_{max} = 512$를 사용한다.<br>
+**Multi-scale learning**은 $S$ 값을 $[S _{min}, S _{max}]$ 사이에서 랜덤하게 선택하고 이 값을 통해 이미지를 scale한다. VGGNet은 $S _{min} = 256, S _{max} = 512$를 사용한다.<br>
 이 방법을 사용하면 원본 이미지에 있는 물체는 랜덤한 크기를 가질 수 있으므로 더 다양한 입력 variation을 줄 수 있다 (scale jittering).<br>
 네트워크의 훈련시 Single-scale learning과 비슷하게 먼저 $S=384$인 Single-scale learning 네트워크를 학습 시키고, 학습된 네트워크의 초기값을 적용하여 fine-tuning 한다.
 
