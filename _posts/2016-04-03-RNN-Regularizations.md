@@ -2,7 +2,7 @@
 layout: "post"
 title: "RNN Regularizations"
 excerpt: "Regularization methods used in RNN"
-date: "2016-04-04 06:00:00"
+date: "2016-04-03 06:00:00"
 ---
 
 Feedfoward neural net은 dropout, BN등과 같이 강력한 regularizer 기법들을 적용해서 overfit을 해결하곤 한다. 하지만 RNN은 feedfoward net에서 사용한 regularizer를 그대로 쓰게되면 생기는 여러 문제점들로 인해서 아직까지 이 분야에 대한 발달이 더딘편이기도 하고, 정리도 잘 되어있지 않고 있다. 그래서 이번 포스트에서 최근 나온 몇편의 논문들을 소개해서 RNN에서 어떤식으로 regularizer들이 적용될 수 있는지에 대한 정리를 하고자 한다.
