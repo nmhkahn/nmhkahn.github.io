@@ -9,8 +9,6 @@ date: "2016-02-03 14:00:00"
 Fcitx를 사용하였다.  
 참고 - [우분투 14.04, 'Fcitx'로 한영 전환.](http://egloos.zum.com/nemonein/v/5229390)
 
----
-
 ## Python 패키지 설치
 기본적인 python 패키지인 numpy, scipy, matplotlib을 맨땅에서 깔면 많은 오류가 발생하게 된다. 물론 apt-get을 이용하면 알아서 dependency를 잡아주니 편리하지만, 최신 버전을 지원하지 않을 수도 있고 가장 큰 문제는 virtualenv를 사용하지 못한 다는 것이다. 
 
@@ -38,7 +36,6 @@ $ sudo apt-get install libfreetype6-dev libpng-dev ligjpeg8-dev
 위 dependency들을 설치하고, pip을 통해 numpy, scipy, matplotlib를 깔면 된다.
 
 ## Jekyll 설치
-
 다음과 같이 설치한다.  
 (참고 - [운영체제별 지킬 설치와 사용](http://vjinn.github.io/install-jekyll))
 
@@ -98,5 +95,3 @@ Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of 
 ```shell
 $ gem install jekyll-paginate
 ```
-
-

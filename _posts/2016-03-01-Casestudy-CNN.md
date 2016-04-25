@@ -14,6 +14,7 @@ date: "2016-02-09 16:00:00"
 - ResNet
 
 ## AlexNet (2012)
+---
 Alex Krizhevsky의 이름을 따서 작명된 AlexNet은 2012년 ILSVRC에서 압도적인 winner가 된 네트워크이다. 이 네트워크 이후 ZFNet, NIN, VGGNet, GoogLeNet, ResNet등 다양한 뉴럴넷 기반의 모델들이 ILSVRC 혹은 다른 데이터셋에서 outperform한 결과를 보이게 되는데, AlexNet은 이 돌풍을 열게 한 선두주자라 말할 수 있을 것이다.  이번 포스트에서는 AlexNet이 소개된 논문을 정리하여, AlexNet에서 어떠한 방법론을 사용하여 LeNet을 발전시켰는지 살펴 볼 예정이다.
 
 ### Datasets 
@@ -89,9 +90,8 @@ Overfitting을 해결하기 위해 강력한 data augmentation과 dropout 기법
 #### Dropout
 [Neural Network](/NN) 참조 
 
----
-
 ## VGGNet(2014)
+---
 VGGNet은 2014년 ILSVRC에서 GoogLeNet과 함께 높은 성능을 보인 네트워크이다. 또한 간단한 구조, 단일 네트워크에서 좋은 성능등을 이유로 여러 응용 분야에서 기본 네트워크로 많이 사용되고 있다.
 
 ### Architecture
@@ -158,9 +158,8 @@ VGGNet은 하나의 이미지당 fowardprop 단계에서 약 93MB정도의 메�
 
 한가지 눈여겨 볼점은 대부분의 메모리는 앞쪽 conv 레이어에서 발생하고, 대부분의 parameter는 fc 레이어에서 증가한다는 것이다.
 
----
-
 ## Network In Network (2014)
+---
 Network In Network (NIN)는 VGGNet, AlexNet과 같이 ILSVRC에서 우수한 성능을 입증한 네트워크는 아니다 (논문에서도 CIFAR-100, MNIST, SVHN과 같은 데이터셋에서만 성능을 검증하였다). 그럼에도 불구하고 NIN을 소개하려는 이유는 NIN에서 사용한 방법론들이 GoogLeNet에서 사용되었기 때문이다.
 
 ### Basic Concept of NIN
@@ -236,13 +235,11 @@ NIN은 1x1 필터를 이용한 mlpconv 레이어에 의해 **더 나은 local ab
 
 하지만 조금 의문인점은 VGGNet의 실험 결과에서 conv1 레이어를 사용한 모델 C 네트워크와 conv3 레이어를 사용한 모델 D 네트워크를 비교했을 때 모델 D가 더 좋은 성능을 보인 것으로 나타났다. 물론 모델 B와 C를 비교하면 성능향상이 일어났다고 주장할 수 있지만, 너무 깊은 레이어가 아닌 이상에야 conv1이 아닌 conv3을 사용하는게 더 낫지 않을까 싶다.
 
----
-
 ## GoogLeNet (2014)
-
 ---
 
 ## PReLU-net (2015)
+---
 
 ### Parametric Rectifiers
 <div class="imgcap">
@@ -305,9 +302,8 @@ ReLU를 사용하는 네트워크는 sigmoid-like 네트워크보다 weight들�
 
 작성중..
 
----
-
 ## ResNet (2015)
+---
 MSRA에서 만든 ResNet은 2015년 ImageNet의 Classification, Detection, Localization 부문에서 모두 1위를 차지했으며, 매우매우 깊은 레이어를 자랑하는 네트워크이다. 레이어의 수에 관한 설명은 아래 슬라이드 그림으로 대체하겠다...
 
 <div class="imgcap">
@@ -355,8 +351,6 @@ residual 네트워크는 일반적인 네트워크와는 달리 몇개의 레이
 - Xavier Init
 
 작성중..
-
----
 
 ### 레퍼런스
 [ImageNet Classification with Deep Convolutional Neural Networks](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)<br>

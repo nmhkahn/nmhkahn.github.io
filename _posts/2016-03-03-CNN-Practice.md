@@ -16,6 +16,7 @@ CNN을 실제로 구현하거나 사용할 때 알아두면 좋은 팁과 트릭
 - Floating point precision
 
 ## Data augmentation
+---
 
 <div class="imgcap">
 <img src="/assets/CNN-Practice/augmentation.png">
@@ -59,9 +60,8 @@ Data augmentation은 CNN의 성능을 높이기 위해 사용하는 방법이다
 data augmentation은 외부 라이브러리를 사용한다면 쉽게 구현할 수 있는 방법이고 특히 학습 데이터셋이 작다면 data augmentation을 사용하는게 매우 효과적이다.<br>
 참고로 강의도중 어떤 학생이 data augmentation은 on-line으로 진행하는지 아니면 off-line으로 미리 저장해놓고 사용하는지 질문을 했는데, 답변으로 만약 off-line으로 사용한다면 디스크 공간을 매우 많이 잡아먹기 때문에 네트워크의 학습 혹은 테스트와 동시에 on-line 방식을 사용한다고 하였다. 이 때 GPU에서는 (GPU가 있다면..) 네트워크의 학습, 테스트와 관련된 일을 하고 이와 동시에 CPU에 쓰레드를 하나 만들어 이 쓰레드에서 다음 mini-batch의 augmentation을 pipeline을 하나 만들면 큰 overhead 없이 적용할 수 있다.
 
----
-
 ## Transfer Learning
+---
 흔히 생각하는 뉴럴넷에 대한 편견은 "CNN을 학습시키는데 많은 데이터와 GPU가 필요하지 않을까?" 이다. 꼭 그렇진 않다. Transfer Learning과 fine-tuning을 사용하면 비교적 적은 데이터로도 괜찮은 성능을 낼 수 있다.
 
 <div class="imgcap">
@@ -85,9 +85,8 @@ data augmentation은 외부 라이브러리를 사용한다면 쉽게 구현할 
 뉴럴넷의 얕은 레이어(입력 이미지와 가까운 레이어)는 edge나 texture를 검출하는 등의 역할을 하는 이미지에 대해 매우 포괄적으로 사용 가능한 레이어이다. 반면에 깊은 레이어는 학습에 사용된 데이터셋에 specfic하기 때문에 얕은 레이어도 fine-tune하면 물론 좋지만, 꼭 그럴 필요는 없다.<br>
 마지막으로 transfer learning에 대해 요약하면, **만약 이미지셋이 100만개보다 적다면 pre-train 모델을 사용하라** 로 요약할 수 있겠다.
 
----
-
 ## How to stack layers?
+---
 사실 이 주제도 VGGNet 등의 포스트에서 언급한 내용이지만... 다시 한번 정리해보도록 하겠다.
 
 <div class="imgcap">
@@ -134,9 +133,8 @@ GoogLeNet의 최신 버전 중 하나인 inception-v3가 factorize 방식을 사
 - NxN 레이어는 1xN, Nx1 레이어로 factorize 할 수 있다.
 - 위 방법들을 사용하면 적은 parameter와 연산, 더 많은 non-linearity라는 장점을 얻을 수 있다.
 
----
-
 ## How to compute network?
+---
 parameter를 줄이는 방법을 통해 성능을 향상시킬 수 있지만 CNN은 최소한 어느정도 이상의 convolution 연산을 필요로 한다. 그럼 convolution을 최대한 빠르게 하는 방법은 무엇이 있을까?
 
 ### im2col
@@ -185,9 +183,8 @@ parameter를 줄이는 방법을 통해 성능을 향상시킬 수 있지만 CNN
 - 큰 문제의 경우 분산 처리를 이용하여 학습시키면 효과적이다
 - CPU - GPU와 CPU - disk 사이의 병목현상을 유의해야 한다
 
----
-
 ## Floating Point Precision
+---
 대부분 프로그래밍을 할 때 64bit의 double precision을 이용하여 실수 계산을 한다. 반면 메모리와 계산 성능상의 문제 때문에 CNN은 32bit의 single precision을 사용한다. 더 나아가 16bit의 half precision도 점차 많이 사용해 나가는 추세인데 cuDNN은 이미 16bit 실수 계산을 지원한다고 한다. Fast algorithms에서 언급한 논문에서 fp16을 사용한 커널이 현재 가장 빠른 연산을 할 수 있다.
 
 <div class="imgcap">
