@@ -33,14 +33,15 @@ CNN의 등장으로 neural network 진영은 이미지 인식 분야에서 엄�
 <div class="imgcap">
 <img src="/assets/TransferNet/deconvnet_overall.png">
 </div>
-conv 네트워크는 마지막 classification 레이어를 제거한 VGG-16 네트워크를 사용한다. deconv 네트워크는 conv 네트워크를 뒤집은 모양이며 pooling은 unpooling으로, conv는 deconv로 바꾸고 ReLU는 conv 네트워크와 같다.<br>
-conv 네트워크는 fowardprop시 activation 이미지의 크기가 점차 줄어들지만 deconv 네트워크는 반대로 unpooling과 deconv 레이어를 거치면서 커지는 양상을 보인다는 차이가 있다.
+conv 네트워크는 마지막 classification 레이어를 제거한 VGG-16 네트워크를 사용한다. deconv 네트워크는 conv 네트워크를 뒤집은 모양인 대신 pooling은 unpooling으로, conv는 deconv로 바꾸고 ReLU는 conv 네트워크와 같으며 conv 네트워크는 fowardprop시 activation 이미지의 크기가 점차 줄어들지만 deconv 네트워크는 반대로 unpooling과 deconv 레이어를 거치면서 커지는 양상을 보인다는 차이가 있다.
 
 ### Deconvolution Network
 <div class="imgcap">
 <img src="/assets/TransferNet/unpool_deconv.png">
 </div>
 #### Unpooling
+pooling 레이어는 얕은 레이어에서 noisy한 activation들을 걸러주는 역할을 하고, 깊은 레이어에서는 robust한 activation만 남기는 역할을 한다. 하지만 이 작업들은 pooling 레이어의 receptive field에 있는 spatial한 정보들이 사라질 수 있기 때문에 segmentation이나 super-resolution과 같이 정확한 정보가 필요한 문제에 대해서는 문제가 된다.<br>
+이 문제를 해결하기 위해 논문에서는 deconv 네트워크에 unpooling 레이어를 추가 하였다. unpooling 레이어는 
 #### Deconvolution
 
 
