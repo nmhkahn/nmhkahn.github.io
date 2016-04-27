@@ -8,5 +8,5 @@ twitter_username:
 github_username:  nmhkahn
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: /:title
