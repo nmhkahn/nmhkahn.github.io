@@ -181,7 +181,7 @@ segmentation 네트워크를 통해 특정 클래스의 segmentation 마스크�
 
 물체의 공간적인 정보를 넣기 위해 classification 네트워크에서 fc 레이어 이전 레이어에서 빼온 결과값을 이용한다. DecoupledNet은 이 결과값을 pool5 레이어에서 가져오는데 이는 conv나 pooling 레이어의 결과값은 공간적 정보를 저장하는데 효과적이기 때문이라고 한다 (사실 fc 레이어는 공간 정보가 없다). 논문에서는 이 값을 $\boldsymbol{f} _{\text{spat}}$ 라고 명명하였다.
 
-$\boldsymbol{f} _{\text{spat}}$ 의 activation이 물체의 모양을 생성하는데 중요한 정보를 가지고 있지만 이미지가 갖고 있는 모든 label에 대한 정보들을 가지고 있다. 그래서 논문에서는 $\boldsymbol{f} _{\text{spat}}$ 에서 class-specific한 정보를 식별해야 한다고 한다. 이는 class-speific한 saliency 맵을 만들어 활용 할 수 있다.
+$\boldsymbol{f} _{\text{spat}}$ 의 activation이 물체의 모양을 생성하는데 중요한 정보를 가지고 있지만 이미지가 포함되는 모든 class에 대한 정보가 섞여 있다. 그래서 논문에서는 $\boldsymbol{f} _{\text{spat}}$ 에서 특정 label에만 해당되는 정보를 뽑아내서 구별해야만 한다고 한다. 이는 class-speific한 saliency 맵을 만들어 활용 할 수 있다.
 
 <div class="imgcap">
 <img src="/assets/TransferNet/saliency.png"><br>
