@@ -9,7 +9,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: lucida grande,tahoma,verdana,arial,sans-serif;
+  font-family: Helvetica, Arial;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -200,22 +200,19 @@ a:visited { color: #205caa; }
 }
 
 .post-content h1 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .post-content h2 {
   font-size: 26px;
-  font-weight:bold;
 }
 
 .post-content h3 {
   font-size: 22px;
-  font-weight:bold;
 }
 
 .post-content h4 {
   font-size: 18px;
-  font-weight: bold;
 }
 
 .post-content blockquote {
