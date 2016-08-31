@@ -7,6 +7,17 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} posts" />
 
+    <!-- for MathJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+  	  MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+		displayMath: [['$$','$$'],['\\[','\\]']]},
+	    displayIndent: "0em",
+        "HTML-CSS": { scale: 105 }
+  	  });
+    </script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
