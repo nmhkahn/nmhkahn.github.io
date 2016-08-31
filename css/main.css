@@ -1,6 +1,10 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
+
+/* import 나눔 고딕 font */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial;
+  font-family: "Nanum Gothic", Helvetica, Arial;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;

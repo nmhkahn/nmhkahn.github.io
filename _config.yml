@@ -16,3 +16,4 @@ kramdown:
     input: GFM
     toc_levels: 1..6
     smart_quotes: lsquo,rsquo,ldquo,rdquo
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
