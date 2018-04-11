@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fast, Accurate, and, Lightweight Super-Resolution with Cascading Residual Network</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} posts" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-72845203-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="wrap">
+      <h1><center><span style="font-weight:normal;">Fast, Accurate, and, Lightweight Super-Resolution<br>with Cascading Residual Network</span></center></h1>
+      <center><span style="font-size:1.4em;">Namhyuk Ahn&nbsp;&nbsp;&nbsp;&nbsp;Byungkon Kang&nbsp;&nbsp;&nbsp;&nbsp;Kyung-Ah Sohn</span></center>
+      <center><span style="font-size:1.2em;">Ajou University</span></center>
+      <center><span style="font-size:1.2em;">arXiv preprint arXiv:1803.08664 [<a href="https://arxiv.org/abs/1803.08664">arXiv</a>]</span></center>
+      <img width="100%", align="center" src="../assets/index/paper/arxiv2018/intro.png" border="0">
+
+      <br><br>
+      <hr size="2" align="left" noshade="">
+
+      <br>
+
+      <h2><span style="font-weight:normal;">Abstarct</span></h2>
+      <div>
+        In recent years, deep learning methods have been successfully applied to single-image super-resolution tasks. Despite their great performances, deep learning methods cannot be easily applied to real-world applications due to the requirement of heavy computation. In this paper, we address this issue by proposing an accurate and lightweight deep learning model for image super-resolution. In detail, we design an architecture that implements a cascading mechanism upon a residual network. We also present a variant model of the proposed cascading residual network to further improve efficiency. Our extensive experiments show that even with much fewer parameters and operations, our models achieve performance comparable to that of state-of-the-art methods.
+      </div>
+      <br>
+
+      <h2><span style="font-weight:normal;">Our Methods</span></h2>
+      We provide the codes and results of our methods.  [<a href="https://github.com/nmhkahn/CARN-pytorch">Github</a>]
+      <center>
+      <img width="70%", align="center" src="../assets/index/paper/arxiv2018/carn.png" border="0"><br><br>
+      <img width="70%", align="center" src="../assets/index/paper/arxiv2018/carn_block.png" border="0">
+      </center>
+      <br>
+
+      <h2><span style="font-weight:normal;">Results</span></h2>
+      <center>
+      <img width="90%", align="center" src="../assets/index/paper/arxiv2018/comparison.png" border="0"><br><br>
+      </center>
+      <br>
+
+      <h2><span style="font-weight:normal;">Bibliography</span></h2>
+      <pre>
+@article{ahn2018fast,
+  title={Fast, Accurate, and, Lightweight Super-Resolution with Cascading Residual Network},
+  author={Ahn, Namhyuk and Kang, Byungkon and Sohn, Kyung-Ah},
+  journal={arXiv preprint arXiv:1803.08664},
+  year={2018}
+}
+      </pre>
+    </div>
+  </div>
+</body>
+</html>
