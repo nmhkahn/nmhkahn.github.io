@@ -1,6 +1,6 @@
-@article{ahn2018fast,
-  title={Fast, Accurate, and Lightweight Super-Resolution with Cascading Residual Network},
+@inproceedings{ahn2018fast,
+  title={Fast, accurate, and lightweight super-resolution with cascading residual network},
   author={Ahn, Namhyuk and Kang, Byungkon and Sohn, Kyung-Ah},
-  journal={arXiv preprint arXiv:1803.08664},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
   year={2018}
 }
