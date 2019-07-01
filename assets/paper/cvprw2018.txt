@@ -1,7 +1,0 @@
-@InProceedings{ahn2018image,
-  title={Image Super-Resolution via Progressive Cascading Residual Network},
-  author={Ahn, Namhyuk and Kang, Byungkon and Sohn, Kyung-Ah},
-  booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-  month={June},
-  year={2018}
-}
