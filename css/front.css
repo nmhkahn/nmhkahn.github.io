@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
+  padding: 0px 30px 0px 30px;
   background-color: #fdfdfd;
 }
 
@@ -23,18 +24,6 @@ ul {
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
-
-/* Utility */
-
-.wrap:before,
-.wrap:after { content:""; display:table; }
-.wrap:after { clear: both; }
-.wrap {
-  max-width: 950px;
-  padding: 5px 30px;
-  margin: 0 auto;
-  zoom: 1;
-}
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
@@ -63,7 +52,6 @@ a:visited { color: #205caa; }
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   background-color: white;
