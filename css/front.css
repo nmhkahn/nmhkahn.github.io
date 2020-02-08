@@ -66,6 +66,14 @@ a:visited { color: #205caa; }
   background-color: white;
 }
 
+.name {
+  display: block;
+  color: #222;
+  font-size: 40px;
+  letter-spacing: -1px;
+  padding: 20px 0px 0px 0px;
+}
+
 .site-title,
 .site-title:hover,
 .site-title:visited {
