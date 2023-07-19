@@ -13,6 +13,8 @@
 "Lee":
   - firstname: ["Junsoo"]
     url: https://ssuhan.github.io/
+  - firstname: ["Pilhyeon"]
+    url: https://pilhyeon.github.io
 
 "Kim":
   - firstname: ["Daesik"]
@@ -21,6 +23,8 @@
     url: https://sites.google.com/view/ml-pr
   - firstname: ["Sungnyun"]
     url: https://bit.ly/sungnyunkim
+  - firstname: ["Kunhee"]
+    url: https://kunheekim.xyz
 
 "Sohn":
   - firstname: ["Kyung-Ah"]
@@ -33,3 +37,15 @@
 "Yoo":
   - firstname: ["Jaejun"]
     url: https://sites.google.com/view/jaejunyoo
+
+"Jeon":
+  - firstname: ["Seogkyu"]
+    url: https://scholar.google.com/citations?user=w-byizkAAAAJ
+
+"Uh":
+  - firstname: ["Youngjung"]
+    url: https://vilab.yonsei.ac.kr
+
+"Byun":
+  - firstname: ["Hyeran"]
+    url: http://cvpr.yonsei.ac.kr/main
