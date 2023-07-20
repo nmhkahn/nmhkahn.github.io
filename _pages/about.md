@@ -15,8 +15,8 @@ social: false  # includes social icons at the bottom of the page
 ---
 [[Google Scholar](https://scholar.google.com/citations?user=cFSb6QQAAAAJ)] [[CV](assets/CV.pdf)]
 
-I am currently an AI researcher at [NAVER WEBTOON](https://webtoonscorp.com/en/), specializing in computer vision. My focus is on the development of user-centric generative AI models and finding effective ways to deliver these to users.
+I currently serve as an AI researcher at [NAVER WEBTOON](https://webtoonscorp.com/en/), where my expertise lies in computer vision. Specifically, my responsibilities span in the design and implementation of generative AI models that are user-centric, and devising strategic approaches to making these models accessible to our users.
 
-I earned my Ph.D. from Ajou University in 2021 under the guidance of [Prof. Kyung-Ah Sohn](https://sites.google.com/site/kasohn/home). My work primarily revolved around image enhancement and restoration projects, including image super-resolution. Prior to this, I obtained my Bachelor's degree in Media from Ajou University in 2016.
+Before joining Webtoon AI, I recieved my Ph.D. from Ajou University in 2021 under the guidance of [Prof. Kyung-Ah Sohn](https://sites.google.com/site/kasohn/home). During this time, my works primarily revolved around image enhancement and restoration projects, including image super-resolution. Prior to this, I obtained my Bachelor's degree in Media from Ajou University in 2016.
 
-At present, my research interests lie in the development of user-friendly content creation tools. My primary goal is to establish a framework for media generation, translation, or manipulation that is based on user-guided information, capitalizing on the capabilities of recent generative AI models.
+At present, I am particularly interested in the creation of user-friendly tools for content generation. My ultimate goal is to establish a user-informed framework for media generation, translation, or manipulation, utilizing the power of contemporary generative AI models.
