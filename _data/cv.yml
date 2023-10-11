@@ -50,7 +50,9 @@
   type: nested_list
   contents:
     - title: <b>Award</b>
-      items: <b>Honorable Mention Award</b> at NTIRE 2018 Challenge on NTIRE in CVPR workshop
+      items:
+        - <b>Honorable Mention Award</b> at NTIRE 2018 Challenge on NTIRE in CVPR workshop
+        - <b>N Innovation Award</b>, 2nd prize in R&D track at NAVER (WebtoonMe project)
     - title: <b>Teaching</b>
       items:
         - <b>Lecture Instructor</b> in Fastcampus (2017). Covered the basics of deep learning and its applications for non majors as well as provided mentoring of term projects
