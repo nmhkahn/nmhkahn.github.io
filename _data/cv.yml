@@ -39,7 +39,7 @@
   contents:
     - title: <b>Reviewer</b>
       items:
-        - "<b>Conference</b>: CVPR (2023), ICCV (2023)"
+        - "<b>Conference</b>: CVPR (2023-2024), ICCV (2023)"
         - "<b>Journal</b>: TPAMI, TIP, TMM, TCVST, SPIC"
         - "<b>Workshops</b>: NTIRE (@ CVPR 2022)"
     - title: <b>Editor</b>
@@ -51,13 +51,15 @@
   contents:
     - title: <b>Award</b>
       items:
+        - <b>N Innovation Award</b>, 3rd prize in R&D track at NAVER, Jan. 2024 (AI Protection team)
+        - <b>N Innovation Award</b>, 2nd prize in R&D track at NAVER, Jan. 2023 (WebtoonMe project)
         - <b>Honorable Mention Award</b> at NTIRE 2018 Challenge on NTIRE in CVPR workshop
-        - <b>N Innovation Award</b>, 2nd prize in R&D track at NAVER (WebtoonMe project)
+    - title: <b>Press</b>
+      items:
+        - <a href="https://www.techm.kr/news/articleView.html?idxno=107380">"미국·유럽·일본도 '감탄'...웹툰 AI 시대 열어야죠"</a>, Tech M, Feb. 2023
+        - <a href="https://n.news.naver.com/article/138/0002140131?sid=105">"내 얼굴이 웹툰 캐릭터로 변했다"</a>, Digital Daily, Jan. 2023
+        - <a href="https://www.koreaworldtimes.com/topics/news/12479">"日本のマンガを脅かす韓国発「ウェブトゥーン」 AI等の活用で急追"</a>, KOREA WORLD TIMES, Dec. 2022
     - title: <b>Teaching</b>
       items:
         - <b>Lecture Instructor</b> in Fastcampus (2017). Covered the basics of deep learning and its applications for non majors as well as provided mentoring of term projects
-    - title: <b>Press</b>
-      items:
-        - <a href="https://www.techm.kr/news/articleView.html?idxno=107380">"미국·유럽·일본도 '감탄'...웹툰 AI 시대 열어야죠"</a>, Tech M, Feb. 8th, 2023
-        - <a href="https://n.news.naver.com/article/138/0002140131?sid=105">"내 얼굴이 웹툰 캐릭터로 변했다"</a>, Digital Daily, Jan. 4th, 2023
-        - <a href="https://www.koreaworldtimes.com/topics/news/12479">"日本のマンガを脅かす韓国発「ウェブトゥーン」 AI等の活用で急追"</a>, KOREA WORLD TIMES, Dec. 15th, 2022
+
