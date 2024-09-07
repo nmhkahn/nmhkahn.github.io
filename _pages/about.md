@@ -7,7 +7,7 @@ subtitle: |+
     Assistant Profeessor, <br>
     School of Electrical and Electronics Engineering, <br>
     Inha University <br>
-    <a href="">Generative Computing Lab</a> <br>
+    <a href="https://gcl-inha.github.io">Generative Computing Lab</a> <br>
 profile:
   align: left
   image: profile.jpg
