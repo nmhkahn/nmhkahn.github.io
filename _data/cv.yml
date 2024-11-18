@@ -5,7 +5,7 @@
       institution: Inha University
       year: 2024.9 -
       description:
-        - School of Electical and Electronics Enginneering
+        - Department of Information and Communication Engineering
         - Department of Electrical and Computer Engineering (Graduate School)
     - title: AI Researcher
       institution: Webtoon AI, NAVER WEBTOON
@@ -45,8 +45,8 @@
   contents:
     - title: Reviewer
       items:
-        - "<b>Conference</b>: CVPR (2023-2024), ICCV (2023), ECCV (2024), NeurIPS (2024)"
-        - "<b>Journal</b>: TPAMI, TIP, TMM, TCVST, SPIC, ESWA"
+        - "<b>Conference</b>: CVPR (2023-), ICCV (2023), ECCV (2024), NeurIPS (2024)"
+        - "<b>Journal</b>: TPAMI, TIP, TMM, TCVST, SPIC, ESWA, Neurocomputing"
         - "<b>Workshops</b>: NTIRE (@ CVPR 2022)"
     - title: Editor
       items: 
