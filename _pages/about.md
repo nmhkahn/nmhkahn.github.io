@@ -3,9 +3,9 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-    <a href='./assets/resume.pdf'>Resume</a> <br>
+    <a href='./assets/cv.pdf'>CV</a> <br>
     Assistant Profeessor, <br>
-    School of Electrical and Electronics Engineering, <br>
+    School of Electrical and Electronic Engineering, <br>
     Inha University <br>
     <a href="https://gcl-inha.github.io">Generative Computing Lab</a> <br>
 profile:
@@ -14,7 +14,7 @@ profile:
   image_circular: true # crops the image to make it circular
 
 news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
